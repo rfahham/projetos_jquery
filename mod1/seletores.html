@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Seletores Hierárquicos</title>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$('h2, p').css('margin','0');
+			$('p').css('color', 'blue');
+			$('.div1').css({'margin-bottom': '20px', background: '#ccc'});
+		});
+
+	</script>
+</head>
+<body>
+	<div class="div1">
+		<h2>H2 filho  de DIV1</h2>
+		<p>P filho de DIV1 <span>Span Filho de P</span></p>
+		<span>Span filho de DIV1</span>
+	</div>
+	<h2>H2 fora de DIV1</h2>
+	<p class="p1">P1 fora da DIV1</p>
+	<p>P2 fora da DIV1</p>
+	<p>P3 fora da DIV1</p>
+</body>
+</html>

@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+ <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+    // Para saber se o DOM foi carregado	
+    $( document ).ready(function() {
+        alert( "document loaded" );
+    });
+
+    // Para saber se todo o conteúdo da página foi carregada.
+    $( window ).load(function() {
+        alert( "window loaded" );
+    });
+    </script>
 </head>
 <body>
-	
+    <img src="http://s2.glbimg.com/7Et2QlxLzBs1FQ5Z_C-GDSa2DTE=/i.glbimg.com/og/ig/infoglobo1/f/original/2017/01/16/blog_shark.jpg" alt="">
 </body>
 </html>
-
-
-
